@@ -1,0 +1,21 @@
+.background {
+    background: rgb(255,236,18);
+    background: radial-gradient(circle, rgba(255,236,18,1) 52%, rgba(245,153,68,1) 95%);
+  }
+
+  /* 스크롤바 설정*/
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* 스크롤바 막대 설정*/
+  .scrollbar::-webkit-scrollbar-thumb{
+      height: 17%;
+      background-color: #77a3a9;
+      border-radius: 10px;
+  }
+  
+  /* 스크롤바 뒷 배경 설정*/
+  .scrollbar::-webkit-scrollbar-track{
+      background-color: rgba(221, 252, 244, 0.8);
+  }
