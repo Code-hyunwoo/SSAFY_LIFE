@@ -23,7 +23,7 @@ return (
         <div className={styles.btnbox}>
             <button id={styles.btn1} onClick={()=>{navigate("/webRTC")}}> WebRTC </button>
             <button id={styles.btn1} onClick={()=>{navigate("/diary")}}> 개발 일기 </button>
-            <button id={styles.btn1}> ???? </button>
+            <button id={styles.btn1}> Motion UI </button>
             <button id={styles.btn1}> ???? </button>
         </div>
 
