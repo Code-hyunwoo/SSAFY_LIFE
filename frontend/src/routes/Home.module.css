@@ -20,7 +20,7 @@
 
 .titlebox {    
     position: relative;
-    top: 5vh;
+    /* top: 5vh; */
     margin-bottom: 10vh;
 }
 
@@ -75,8 +75,8 @@
 
 .btnbox {
     position: relative;
-    margin-top: 10vh;
-    top: 10vh;
+    margin-top: 5vh;
+    /* top: 5vh; */
 }
 
 
@@ -115,3 +115,12 @@
 #btn1:hover:after {
     left: calc(100% + 50px); 
     opacity: 1;}
+
+
+  
+  #earth {
+    position: fixed;
+    bottom: -120vh;
+    width: 80vw;
+    z-index: -50;
+  }

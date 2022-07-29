@@ -1,6 +1,7 @@
 import styles from "./Home.module.css"
 import { useNavigate } from "react-router-dom"
-
+import earth from "../assets/images/earthShadow.gif"
+// import black from "../assets/images/black.jpg"
 
 
 function Home() {
@@ -26,6 +27,7 @@ return (
             <button id={styles.btn1}> Motion UI </button>
             <button id={styles.btn1}> ???? </button>
         </div>
+        <img src={earth} id={styles.earth} alt="earth" />
 
     </div>
 );
