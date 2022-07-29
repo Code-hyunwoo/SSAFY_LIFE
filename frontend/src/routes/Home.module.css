@@ -131,3 +131,10 @@
     bottom: 10vw;
     right: 15vw;
   }
+
+  #space {
+    position: fixed;
+    width: 10vw;
+    bottom: 7vw;
+    left: 5vw;
+  }

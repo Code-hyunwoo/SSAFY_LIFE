@@ -2,6 +2,7 @@ import styles from "./Home.module.css"
 import { useNavigate } from "react-router-dom"
 import earth from "../assets/images/earthShadow.gif"
 import ard from "../assets/images/ard_super2.gif"
+import space from "../assets/images/spaceStation.png"
 
 
 function Home() {
@@ -29,6 +30,7 @@ return (
         </div>
         <img src={earth} id={styles.earth} alt="earth" />
         <img src={ard} id={styles.ard} alt="ard" />
+        <img src={space} id={styles.space} alt="space" />
 
     </div>
 );
