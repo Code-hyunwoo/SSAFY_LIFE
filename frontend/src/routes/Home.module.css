@@ -124,3 +124,10 @@
     width: 80vw;
     z-index: -50;
   }
+
+  #ard {
+    position: fixed;
+    width: 10vw;
+    bottom: 10vw;
+    right: 15vw;
+  }
