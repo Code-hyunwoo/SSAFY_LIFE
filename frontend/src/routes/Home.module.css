@@ -16,17 +16,18 @@
     margin-left: 10vw;
     margin-right: 10vw;
     flex-direction: column;
+    text-align: center;
 }
 
 .titlebox {    
     position: relative;
-    /* top: 5vh; */
+    top: 6vh;
     margin-bottom: 10vh;
 }
 
 .title {
     position: relative;
-    font-size: 10vw;
+    font-size: 7vw;
     font-family: 'Bitter', serif;
     text-align: center;
     opacity: 0;
@@ -75,14 +76,14 @@
 
 .btnbox {
     position: relative;
-    margin-top: 5vh;
+    margin-top: 10vh;
     /* top: 5vh; */
 }
 
 
   #btn1 {
-    width: 18vw;
-    height: 8vh;
+    width: 12vw;
+    height: 7vh;
     font-size: 2vw;
     font-family: 'KOTRAHOPE';
     /* font-weight: 600; */
@@ -134,7 +135,7 @@
 
   #space {
     position: fixed;
-    width: 10vw;
-    bottom: 7vw;
-    left: 5vw;
+    width: 5vw;
+    bottom: 5vw;
+    left: 15vw;
   }

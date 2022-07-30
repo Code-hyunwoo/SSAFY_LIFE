@@ -1,0 +1,11 @@
+.Bgm {
+    position: fixed;
+    width: 3rem;
+    top: 2vw;
+    right: 5vw;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  
+  
