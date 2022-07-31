@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import "./App.css"
 import Diary from "./routes/Diary";
 import Home from "./routes/Home"
-import WebRTC from "./routes/WebRTC";
+import Ssaraoke from "./routes/Ssaraoke";
 import Guest from "./routes/Guest";
 import { useEffect, useState } from "react";
 import All_Night from "./assets/audio/All_Night.mp3"
@@ -122,7 +122,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/webRTC" element={<WebRTC />}></Route>
+          <Route path="/webRTC" element={<Ssaraoke />}></Route>
           <Route path="/diary" element={<Diary />}></Route>
           <Route path="/guest" element={<Guest />}></Route>
         </Routes>
