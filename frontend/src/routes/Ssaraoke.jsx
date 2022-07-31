@@ -11,11 +11,11 @@ function Ssaraoke (){
     return (
         <>
             <div className={styles.ssaraoke}>SSARAOKE</div>
-            <div className={styles.container} id={styles.rgb}>
+                <Screen />
+            <div className={styles.container}>
                 <Crazylights />
                 <LightRope />
                 <MirrorBall />
-                <Screen />
             </div>
         </>
 
