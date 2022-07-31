@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import "./App.css"
 import Diary from "./routes/Diary";
 import Home from "./routes/Home"
@@ -22,6 +22,8 @@ import musicON from "./assets/images/on.png"
 import musicOFF from "./assets/images/off.png"
 import next from "./assets/images/next.png"
 import Musicbar from "./components/Musicbar";
+import Navbar from "./components/Navbar";
+
 
 
 
@@ -117,6 +119,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/webRTC" element={<WebRTC />}></Route>
@@ -143,6 +146,7 @@ function App() {
     onClick={changeBgm}
     />
     
+        
     </div>
   );
 }

@@ -11,6 +11,9 @@ function Guest (){
             <div className={styles.title}>
                 방명록
             </div>
+
+
+            
             <div className={styles.container}>
             <Grid id={styles.post_container} container>
                 <Grid 

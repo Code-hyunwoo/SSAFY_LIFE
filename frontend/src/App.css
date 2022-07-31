@@ -41,3 +41,21 @@
     cursor: pointer;
     z-index: 100;
 }
+
+.world {
+  position: fixed;
+  width: 3rem;
+  top: 1.5vw;
+  left: 5vw;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#home {
+  position: fixed;
+  font-size: 1vw;
+  top: 4.2vw;
+  left: 4.7vw;
+  font-family: "ROKAFSansBold";
+  z-index: 100;
+}
