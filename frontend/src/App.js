@@ -17,6 +17,7 @@ import Walls from "./assets/audio/4Walls.flac"
 import WE from "./assets/audio/WE_GO.mp3"
 import Summer from "./assets/audio/Summer.mp3"
 import Sparkling from "./assets/audio/Sparkling.mp3"
+import September from "./assets/audio/September.mp3"
 import musicON from "./assets/images/on.png"
 import musicOFF from "./assets/images/off.png"
 import next from "./assets/images/next.png"
@@ -30,7 +31,7 @@ function App() {
   const [bgmName, setbgmName] = useState("The Weekend - Out of Time");
   const [nowBgm, setnowBgm] = useState(0);
 
-  const bgmlist = ["All_Night", "Back", "BAMBOLEO", "DM","Illsan","Memory","Time","Walls","WE", "Heart", "Sparkling", "Summer"]
+  const bgmlist = ["All_Night", "Back", "BAMBOLEO", "DM","Illsan","Memory","Time","Walls","WE", "Heart", "Sparkling", "Summer", "September"]
   // const nextBgm = "song"
   useEffect(()=> {
     if (nowBgm > 0 && bgmOn ===true){
@@ -99,6 +100,14 @@ function App() {
       audio.pause();
       setAudio(new Audio(Summer));
       setbgmName("서연 - 여름안에서");
+    } else if (nextBgm === "Time"){
+      audio.pause();
+      setAudio(new Audio(Time));
+      setbgmName("Out of Time");
+    } else if (nextBgm === "September"){
+      audio.pause();
+      setAudio(new Audio(September));
+      setbgmName("September");
     }
     }
 
