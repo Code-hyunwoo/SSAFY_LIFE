@@ -42,6 +42,7 @@
     border-style: double;
     border-width: 0.4vw;
     /* margin-bottom: 1vw; */
+    top: 23vh;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -138,4 +139,43 @@
   
   #rgyPostIt > p > a {
     color: #555;
+  }
+
+
+ 
+  #inputname {
+    position: absolute;
+    left: 42.5%;
+    top: 30vh;
+    width: 15vw;
+    height: 5vh;
+    font-family: 'KOTRAHOPE';
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  #inputtext {
+    position: absolute;
+    left: 37.5%;
+    top: 40vh;
+    width: 25vw;
+    height: 10vh;
+    font-family: 'KOTRAHOPE';
+    font-size: 1.5vw;
+    text-align: center;
+
+  }
+
+  #write {
+    position: absolute;
+    left: 47%;
+    top: 54vh;
+    font-family: 'Shilla_CultureM-Medium';
+    font-size: 2vw;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #write:hover{
+    color: blue;
   }

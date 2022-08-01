@@ -10,8 +10,8 @@
 .Bgm {
     position: fixed;
     width: 3rem;
-    top: 2vw;
-    right: 5vw;
+    top: 33px;
+    right: 70px;
     cursor: pointer;
     z-index: 100;
   }
@@ -29,33 +29,34 @@
     /* color: #fff89a; */
     /* background-color: black; */
     border: none;
-    top: 2.6vw;
-    right: 10vw;
+    top: 45px;
+    right: 165px;
   }
 
 #next {
     position: fixed;
-    width: 1.5rem;
-    top: 2.6vw;
-    right: 8vw;
+    width: 1.5vw;
+    top: 43px;
+    right: 130px;
     cursor: pointer;
     z-index: 100;
 }
 
 .world {
   position: fixed;
-  width: 3rem;
-  top: 1.5vw;
-  left: 5vw;
+  width: 3vw;
+  top: 30px;
+  left: 75px;
   cursor: pointer;
   z-index: 100;
 }
+.world:hover{transform:scale(1.2);}
 
 #home {
   position: fixed;
   font-size: 1vw;
-  top: 4.2vw;
-  left: 4.7vw;
+  top: 85px;
+  left: 75px;
   font-family: "ROKAFSansBold";
   z-index: 100;
 }

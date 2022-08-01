@@ -322,9 +322,9 @@
 #screen {
     position: absolute;
     z-index: 1000 !important;;
-    width: 33vw !important;
+    width: 32vw !important;
     border-radius: 10px;
-    top: 45vh;
+    top: 40vh;
     left: 14vw;
 
 
