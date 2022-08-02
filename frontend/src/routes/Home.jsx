@@ -24,8 +24,8 @@ return (
         </div>  
         <div className={styles.btnbox}>
             <button id={styles.btn1} onClick={()=>{navigate("/webRTC")}}> SSARAOKE </button>
-            <button id={styles.btn1}> Game </button>
-            <button id={styles.btn1} onClick={()=>{navigate("/diary")}}> Motion </button>
+            <button id={styles.btn1} onClick={()=>{navigate("/game")}}> Game </button>
+            <button id={styles.btn1} onClick={()=>{navigate("/diary")}}> 개발 일기 </button>
             <button id={styles.btn1} onClick={()=>{navigate("/guest")}}> 방명록 </button>
         </div>
         <img src={earth} id={styles.earth} alt="earth" />
