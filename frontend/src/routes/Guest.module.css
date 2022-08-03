@@ -144,7 +144,7 @@
 
 
  
-  #inputname {
+  .inputname {
     position: absolute;
     left: 42.5%;
     top: 30vh;
@@ -155,7 +155,7 @@
     text-align: center;
   }
 
-  #inputtext {
+  .inputtext {
     position: absolute;
     left: 37.5%;
     top: 40vh;

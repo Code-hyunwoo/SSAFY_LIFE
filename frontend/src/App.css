@@ -49,6 +49,7 @@
   left: 75px;
   cursor: pointer;
   z-index: 100;
+transition: 0.4s all; 
 }
 .world:hover{transform:scale(1.2);}
 
