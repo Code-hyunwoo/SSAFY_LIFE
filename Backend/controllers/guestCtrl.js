@@ -11,7 +11,7 @@ const guestCtrl = {
     insertGuest : async(req,res) => {
         // javascript 구조 분해 할당
         const {person_id, person_name, person_text} = req.body;
-        const sql = `INSERT INTO guest(person_id,person_name,person_text) VALUES(${person_id},'${person_name}','${person_text}')`
+        const sql = `INSERT INTO guest(person_name,person_text) VALUES('${person_name}','${person_text}')`
         connection.query(
             sql,(error,rows) => {
                 if(error) throw error;
