@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css"
 import Motion from "./routes/Motion";
 import Home from "./routes/Home"
@@ -41,7 +41,7 @@ function App() {
       audio.play();
       // audio.loop=true;
     }
-  },[nowBgm])
+  },[nowBgm,bgmOn,audio])
 
   function BackgroundMusic(){
     if (bgmOn) {

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&display=swap');
+
+
+
+.container {
+    position: relative;
+    margin: 25vh 15vw;
+    font-family: 'Bitter', serif;
+}
+
+
+.fade_in {
+    @include mui-fade(in);
+}
+
+.main {
+    position: relative;
+    width: 996px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid #272727;
+    overflow: hidden;
+  }
+  
+  .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+  }
+  
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'KOTRAHOPE';
+    color: #272727;
+  }
+
+
+
+
+  .c {
+    position: absolute;
+    max-width: 500px;
+    max-height: 500px;
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+    will-change: transform, opacity;
+  }
+  
+  .front,
+  .back {
+    background-size: cover;
+  }
+  
+  .back {
+    background-image: url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i&auto=format&fit=crop);
+  }
+  
+  .front {
+    background-image: url(https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80&auto=format&fit=crop);
+  }
+  
+  .flip_container {
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+  
+
+ .move_container {
+    position: relative;
+    top: 20vh;
+ }
