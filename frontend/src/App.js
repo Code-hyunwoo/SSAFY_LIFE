@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import "./App.css"
-import Diary from "./routes/Diary";
+import Motion from "./routes/Motion";
 import Home from "./routes/Home"
 import Ssaraoke from "./routes/Ssaraoke";
 import Guest from "./routes/Guest";
@@ -123,7 +123,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/webRTC" element={<Ssaraoke />}></Route>
-          <Route path="/diary" element={<Diary />}></Route>
+          <Route path="/motion" element={<Motion />}></Route>
           <Route path="/guest" element={<Guest />}></Route>
           <Route path="/game" element={<Game />}></Route>
         </Routes>

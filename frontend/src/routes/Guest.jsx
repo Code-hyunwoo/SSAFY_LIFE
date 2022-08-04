@@ -62,21 +62,21 @@ function Guest (){
             <div className={styles.title}>
                 방명록
             </div>
-            <input className={styles.inputname} id="inputname" onChange={onNameChange} maxLength="10" placeholder="성함을 적어주세요."></input>
-            <textarea className={styles.inputtext} id="inputtext" onChange={onTextChange} name="text" maxLength="100" placeholder="하고 싶은 말 남기기"></textarea>
-            <span id={styles.write} onClick={()=>{
+            <input className={styles.inputname} id="inputname" onChange={onNameChange} maxLength="6" placeholder="성함을 적어주세요."></input>
+            <input className={styles.inputtext} id="inputtext" onChange={onTextChange} name="text" maxLength="36" placeholder="하고 싶은 말 남기기"></input>
+            <button id={styles.write} onClick={()=>{
                 postVistor(); 
-                resetInput()}}> 작성하기 </span>
+                resetInput()}}> 작성하기 </button>
 
             
             <div className={styles.container}>
             <Grid id={styles.post_container} container>
                 {guest_list.map((guest, index) => (
                     <Grid key={index}
-                    item xs={12} sm={5} lg={3}
-                    id={styles.rgyPostIt}>
-                        <div> {guest.person_text} </div>    
-                        <div> {guest.person_name} </div>    
+                    item xs={12} sm={4} lg={3} id={styles.rgyPostIt}>
+                        <div id={styles.person_name}> {guest.person_name} </div>    
+                        <div id={styles.person_text}> {guest.person_text} </div>    
+                 
                     </Grid>
                 ))}
                 

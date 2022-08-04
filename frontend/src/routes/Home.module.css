@@ -82,7 +82,7 @@
 
 
   #btn1 {
-    width: 12vw;
+    width: 14vw;
     height: 7vh;
     font-size: 2vw;
     font-family: 'KOTRAHOPE';
@@ -92,7 +92,7 @@
     cursor: pointer;
     text-align: center;
     margin-bottom: 1vh;
-    margin-left: 1vw;
+    margin-left: 2vw;
     position: relative;
     bottom: 5vh;
     transition: 0.4s all; 
@@ -138,4 +138,32 @@
     width: 5vw;
     bottom: 5vw;
     left: 15vw;
+  }
+
+  #mike {
+    position: relative;
+    width: 2.4vw;
+    top: 0.6vh;
+    left: -0.5vw;
+  }
+
+  #game {
+    position: relative;
+    width: 2.4vw;
+    top: 0.6vh;
+    left: -1vw;
+  }
+
+  #visitor {
+    position: relative;
+    width: 2.4vw;
+    top: 0.6vh;
+    left: -1vw;
+  }
+
+  #motion {
+    position: relative;
+    width: 2.4vw;
+    top: 0.6vh;
+    left: -1vw;
   }
