@@ -7,6 +7,7 @@ import mike from "../assets/images/mike.png"
 import game from "../assets/images/game.png"
 import visitor from "../assets/images/visitor.png"
 import motion from "../assets/images/motion.png"
+import Firework from "../components/Firework"
 
 function Home() {
 
@@ -24,6 +25,7 @@ return (
             <span className={styles.title}> Hyun </span>
             <span className={styles.title}> woo </span>
             <span className={styles.title}> world </span>
+        <Firework />
         </div>  
         <div className={styles.btnbox}>
             <button id={styles.btn1} onClick={()=>{navigate("/webRTC")}}> 
@@ -43,7 +45,6 @@ return (
         <img src={earth} id={styles.earth} alt="earth" />
         <img src={ard} id={styles.ard} alt="ard" />
         <img src={space} id={styles.space} alt="space" />
-
     </div>
 );
 
