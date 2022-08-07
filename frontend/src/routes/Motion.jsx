@@ -1,6 +1,6 @@
 import styles from './Motion.module.css'
 import { useSpring, animated, a, useTransition } from 'react-spring'
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import useMeasure from 'react-use-measure'
 
 function Motion (){
@@ -33,10 +33,11 @@ function Motion (){
 
     //Picture
     const slides = [
-        'https://www.wallpapertip.com/wmimgs/0-3126_cool-wallpapers-moving-colorful-cool-backgrounds.jpg',
         'https://wc.wallpaperuse.com/wallp/98-981647_s.jpg',
-        'https://mblogthumb-phinf.pstatic.net/MjAxODAyMDNfNDIg/MDAxNTE3NjMwODA2NDgx.uHrmzMsM3fYV1-K8Lb0lHQiilR-eT2MbpN-KUwAyU7Ag.LpRc_T15kntzJq05rMyp45hrx4wZRPclyKqIpH_Tr_gg.JPEG.knicjin/wallpaper_32.jpg?type=w800',
-        'https://downloadwap.com/thumbs2/wallpapers/p2ls/new/33/TrNMwzGE.jpg',
+        'https://t1.daumcdn.net/cfile/blog/217C4C3B53211ACD04',
+        'https://t1.daumcdn.net/cfile/blog/2670884452E5BFFD17',
+        'https://t1.daumcdn.net/cfile/blog/221D0C3B532BA4BA32',
+        'https://mblogthumb-phinf.pstatic.net/MjAxNzA2MTVfNzcg/MDAxNDk3NTA3Mzk3OTgw.AhhRz4qgDd_nB3fpVSlL0h8Hd0ZKT5hLFgDjleb9J14g.Cd5rksCqEHErTlseg0Nq0hdAN6H-oeaw2z0MqT3xY1Qg.JPEG.davidek92/2017-06-15_14-32-47.jpg?type=w800'
       ]
 
     const [index, setIndex] = useState(0)
@@ -53,7 +54,8 @@ function Motion (){
     },
     exitBeforeEnter: true,
   })
-      
+    
+  
 
     return (
         <div className={styles.container}> 
