@@ -6,6 +6,21 @@
     position: relative;
     margin: 25vh 15vw;
     font-family: 'Bitter', serif;
+    display: flex;
+    justify-content: center;
+}
+
+.titlebox{
+  /* display: flex; */
+  position: absolute;
+  font-size: 4vw;
+  font-family: 'Bitter', serif;
+  /* left: 40vw; */
+  top: -10vh;
+  font-weight: 900;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #201e1ef1;
+  
 }
 
 
@@ -15,13 +30,15 @@
 
 .main {
     position: relative;
-    width: 996px;
+    width: 2000px;
     height: 50px;
     cursor: pointer;
     margin: 0 auto;
     border-radius: 5px;
     border: 2px solid #272727;
     overflow: hidden;
+    top: 60vh;
+    right: 20vw;
   }
   
   .fill {
@@ -54,8 +71,8 @@
     position: absolute;
     max-width: 500px;
     max-height: 500px;
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     cursor: pointer;
     will-change: transform, opacity;
   }
@@ -66,16 +83,17 @@
   }
   
   .back {
-    background-image: url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i&auto=format&fit=crop);
+    background-image: url(https://i.pinimg.com/originals/3d/9e/22/3d9e22dd125ed5e3851689139735d682.jpg);
   }
   
   .front {
-    background-image: url(https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&w=1181&q=80&auto=format&fit=crop);
+    background-image: url(https://prodigits.co.uk/thumbs/wallpapers/p2ls/animals/49/055273d312382225.jpg);
   }
   
   .flip_container {
-    position: relative;
-    top: 20vh;
+    position: absolute;
+    top: -10vh;
+    left: 70vw;
     display: flex;
     align-items: center;
     height: 100%;
@@ -84,6 +102,21 @@
   
 
  .move_container {
-    position: relative;
-    top: 20vh;
+    position: absolute;
+    /* top: 20vh; */
+    left: -3vw;
  }
+
+
+
+ .bg {
+  position: relative;
+  top: 10vh;
+  /* bottom: 5vh; */
+  left: 15vw;
+  width: 40vw;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+}
