@@ -46,7 +46,7 @@ function Motion (){
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
-    config: { duration: 3000 },
+    config: { duration: 1500 },
     onRest: (_a, _b, item) => {
       if (index === item) {
         setIndex(state => (state + 1) % slides.length)
