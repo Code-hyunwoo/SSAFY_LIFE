@@ -1,7 +1,7 @@
 {
-    "host": "localhost",
-    "user": "root",
-    "passsword": "11223344",
+    "host": "t7c08.p.ssafy.io",
+    "user": "hyunwoo",
+    "password": "hyunwoo08",
     "port": "3306",
     "database":"hyunwoo"
 }
