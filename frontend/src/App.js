@@ -24,6 +24,8 @@ import Game from "./routes/Game";
 import Attention from "./assets/audio/Attention.flac"
 import Cookie from "./assets/audio/Cookie.flac"
 import HypeBoy from "./assets/audio/HypeBoy.flac"
+import Wordle from "./components/wordle/Wordle";
+import Breakout from "./components/breakout/Breakout";
 
 
 
@@ -126,6 +128,8 @@ function App() {
           <Route path="/motion" element={<Motion />}></Route>
           <Route path="/guest" element={<Guest />}></Route>
           <Route path="/game" element={<Game />}></Route>
+          <Route path="/wordle" element={<Wordle />}></Route>
+          <Route path="/breakout" element={<Breakout />}></Route>
         </Routes>
       </BrowserRouter>
 
