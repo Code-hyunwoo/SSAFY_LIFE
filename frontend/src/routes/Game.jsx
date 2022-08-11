@@ -38,7 +38,7 @@ function Game (){
             <img 
             id={styles.game_img}
             src={"https://allma.si/blog/wp-content/uploads/2022/02/flipping-cards-in-memory-game.gif"}
-            onClick={()=>{navigate("/breakout")}}
+            onClick={()=>{navigate("/memorygame")}}
             alt="Break" />
         </div>
         
