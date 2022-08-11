@@ -26,6 +26,7 @@ import Cookie from "./assets/audio/Cookie.flac"
 import HypeBoy from "./assets/audio/HypeBoy.flac"
 import Wordle from "./components/wordle/Wordle";
 import Breakout from "./components/breakout/Breakout";
+import MemoryGame from "./components/memory/MemoryGame";
 
 
 
@@ -130,6 +131,7 @@ function App() {
           <Route path="/game" element={<Game />}></Route>
           <Route path="/wordle" element={<Wordle />}></Route>
           <Route path="/breakout" element={<Breakout />}></Route>
+          <Route path="/memorygame" element={<MemoryGame />}></Route>
         </Routes>
       </BrowserRouter>
 
