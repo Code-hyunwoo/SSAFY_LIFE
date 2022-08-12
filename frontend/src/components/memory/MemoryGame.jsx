@@ -8,7 +8,7 @@ function MemoryGame() {
 
 
   return (
-    <div className="container">
+    <div className="memory_container">
       <div className="Memory">Memory</div>
       <div className="game_container">
           <Cards/>

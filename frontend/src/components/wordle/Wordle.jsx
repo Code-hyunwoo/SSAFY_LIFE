@@ -2,36 +2,99 @@ import { useState } from "react";
 import "./Wordle.css"
 
 function Wordle() {
-       const answer = 'abcde';
+       const answer = '이현우천재';
        const [count, setCount] = useState(0)
+       const [check, setCheck] = useState(0)
 
        function checkinganswer(){
          
          setCount(count+1);
         if (count === 0){
           var player_input = document.querySelectorAll('.wordle_input1')
-          console.log(player_input)
           for (let i = 0; i < 5; i++){
           if (player_input[i].value === answer[i]){
-            console.log("정답")
             player_input[i].style.background = 'green';
-            player_input[i].style.color = 'red';
+            player_input[i].style.color = 'white';
           } else if (player_input[i].value !== "" & answer.includes(player_input[i].value)){
             player_input[i].style.background = 'yellow';
             player_input[i].style.color = 'red';
           } else {
             player_input[i].style.background = 'lightgrey';
-          }
-
-          // player_input[i].classList.remove('input');
-        }        
-
-          
-      }
-      }
+          } 
+        }   
+                  
+      } else if (count ===1) {
+        var player_input = document.querySelectorAll('.wordle_input2')
+        for (let i = 0; i < 5; i++){
+        if (player_input[i].value === answer[i]){
+          player_input[i].style.background = 'green';
+          player_input[i].style.color = 'white';
+        } else if (player_input[i].value !== "" & answer.includes(player_input[i].value)){
+          player_input[i].style.background = 'yellow';
+          player_input[i].style.color = 'red';
+        } else {
+          player_input[i].style.background = 'lightgrey';
+        } 
+      }        
+    } else if (count ===2) {
+      var player_input = document.querySelectorAll('.wordle_input3')
+      for (let i = 0; i < 5; i++){
+      if (player_input[i].value === answer[i]){
+        player_input[i].style.background = 'green';
+        player_input[i].style.color = 'white';
+      } else if (player_input[i].value !== "" & answer.includes(player_input[i].value)){
+        player_input[i].style.background = 'yellow';
+        player_input[i].style.color = 'red';
+      } else {
+        player_input[i].style.background = 'lightgrey';
+      } 
+    }        
+  } else if (count ===3) {
+    var player_input = document.querySelectorAll('.wordle_input4')
+    for (let i = 0; i < 5; i++){
+    if (player_input[i].value === answer[i]){
+      player_input[i].style.background = 'green';
+      player_input[i].style.color = 'white';
+    } else if (player_input[i].value !== "" & answer.includes(player_input[i].value)){
+      player_input[i].style.background = 'yellow';
+      player_input[i].style.color = 'red';
+    } else {
+      player_input[i].style.background = 'lightgrey';
+    } 
+  }        
+} else if (count ===4) {
+  var player_input = document.querySelectorAll('.wordle_input5')
+  for (let i = 0; i < 5; i++){
+  if (player_input[i].value === answer[i]){
+    player_input[i].style.background = 'green';
+    player_input[i].style.color = 'white';
+  } else if (player_input[i].value !== "" & answer.includes(player_input[i].value)){
+    player_input[i].style.background = 'yellow';
+    player_input[i].style.color = 'red';
+  } else {
+    player_input[i].style.background = 'lightgrey';
+  } 
+}        
+} else if (count ===5) {
+  var player_input = document.querySelectorAll('.wordle_input6')
+  for (let i = 0; i < 5; i++){
+  if (player_input[i].value === answer[i]){
+    player_input[i].style.background = 'green';
+    player_input[i].style.color = 'white';
+  } else if (player_input[i].value !== "" & answer.includes(player_input[i].value)){
+    player_input[i].style.background = 'yellow';
+    player_input[i].style.color = 'red';
+  } else {
+    player_input[i].style.background = 'lightgrey';
+  } 
+}        
+} else {
+  console.log("실패!")
+}
+}
 
   return (
-    <div className="container" >
+    <div className="wordle_container" >
       <div id="title">Wordle</div> 
       <button className="submit_btn" onClick={checkinganswer}> 제출하기 </button>
       <div id="tutorial"> 게임 설명 </div>

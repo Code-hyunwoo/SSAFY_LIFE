@@ -1,6 +1,6 @@
 
 
-.container {
+.wordle_container {
     /* margin: 15vh 20vw; */
     margin-top: 20vh;
     /* margin-bottom: 10vh; */
@@ -30,7 +30,7 @@
 
 .submit_btn {
     position: absolute;
-    left: 75vw;
+    left: 72vw;
     top: 30vh;
     width: 10vw;
     height: 7vh;
