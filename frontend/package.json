@@ -19,6 +19,7 @@
     "react-spinners": "^0.13.4",
     "react-spring": "^9.5.2",
     "react-use-measure": "^2.1.1",
+    "sweetalert2": "^11.4.26",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
