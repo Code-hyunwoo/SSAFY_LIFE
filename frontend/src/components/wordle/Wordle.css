@@ -2,7 +2,7 @@
 
 .wordle_container {
     /* margin: 15vh 20vw; */
-    margin-top: 20vh;
+    margin-top: 15vh;
     /* margin-bottom: 10vh; */
 
     display: flex;
@@ -13,7 +13,7 @@
 #title{
     position: absolute;
     left: 44%;
-    top: 15%;
+    top: 13%;
     font-size: 4vw;
     font-family: 'Bitter', serif;
     font-weight: 900;
@@ -30,8 +30,8 @@
 
 .submit_btn {
     position: absolute;
-    left: 72vw;
-    top: 30vh;
+    left: 46%;
+    top: 68vh;
     width: 10vw;
     height: 7vh;
     font-size: 2vw;
@@ -133,4 +133,202 @@
     left: 5vw;
     top: 40vh;
     text-align: center;
+}
+
+#modal_box{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+#modal_title{
+    font-family: 'KOTRAHOPE';
+    font-size: 3vw;
+}
+
+#wordle_description{
+    margin-top: 3vh;
+    font-family: 'KOTRAHOPE';
+    font-size: 1.5vw;
+}
+
+
+
+
+.start_btn {
+    position: absolute;
+    width: 8vw;
+    height: 5vh;
+    top: 4vh;
+    font-size: 1.5vw;
+    font-family: 'KOTRAHOPE';
+    /* font-weight: 600; */
+    border-radius: 10px;
+    background-color: #ff0000;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    /* margin-bottom: 1vh; */
+    /* margin-left: 2vw; */
+    position: relative;
+    bottom: 5vh;
+    transition: 0.4s all; 
+    overflow:hidden;
+    margin-bottom: 3vh;
+}
+
+.start_btn:hover{transform:scale(1.2);}
+.start_btn:after{
+    content:''; 
+    position: absolute; 
+    top: calc(50% - 50px); 
+    left: -50px; width: 20px; 
+    height: 100px; 
+    background: white; 
+    -webkit-transform: rotate(30deg); 
+    transform:rotate(30deg); 
+    -webkit-transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1); 
+    opacity: 0;}
+.start_btn:hover:after {
+    left: calc(100% + 50px); 
+    opacity: 1;}
+
+
+#count_box1{
+    position: absolute;
+    top: 25%;
+    left: 37.6%;
+    width: 25.6vw;
+    height: 7vh;
+    border: 10px solid;
+    border-color: red;
+    z-index: -10;
+}
+
+#count_box2{
+    position: absolute;
+    top: 34%;
+    left: 37.6%;
+    width: 25.6vw;
+    height: 7vh;
+    border: 10px solid;
+    border-color: red;
+    z-index: -10;
+}
+#count_box3{
+    position: absolute;
+    top: 43%;
+    left: 37.6%;
+    width: 25.6vw;
+    height: 7vh;
+    border: 10px solid;
+    border-color: red;
+    z-index: -10;
+}
+#count_box4{
+    position: absolute;
+    top: 52.1%;
+    left: 37.6%;
+    width: 25.6vw;
+    height: 7vh;
+    border: 10px solid;
+    border-color: red;
+    z-index: -10;
+}
+#count_box5{
+    position: absolute;
+    top: 61%;
+    left: 37.6%;
+    width: 25.6vw;
+    height: 7vh;
+    border: 10px solid;
+    border-color: red;
+    z-index: -10;
+}
+#count_box6{
+    position: absolute;
+    top: 70.1%;
+    left: 37.6%;
+    width: 25.6vw;
+    height: 7vh;
+    border: 10px solid;
+    border-color: red;
+    z-index: -10;
+}
+
+
+
+#cong{
+    position: absolute;
+    width: 5vw;
+    left: 5vw;
+}
+#cong2{
+    position: absolute;
+    width: 5vw;
+    right: 5.5vw;
+    rotate: 270deg;
+}
+
+
+
+.start_btn2 {
+    position: absolute;
+    width: 10vw;
+    height: 5vh;
+    top: 4vh;
+    font-size: 1.5vw;
+    font-family: 'KOTRAHOPE';
+    /* font-weight: 600; */
+    border-radius: 10px;
+    background-color: #ffed54;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-align: center;
+    /* margin-bottom: 1vh; */
+    /* margin-left: 2vw; */
+    position: relative;
+    bottom: 5vh;
+    transition: 0.4s all; 
+    overflow:hidden;
+    margin-bottom: 3vh;
+}
+
+.start_btn2:hover{transform:scale(1.2);}
+.start_btn2:after{
+    content:''; 
+    position: absolute; 
+    top: calc(50% - 50px); 
+    left: -50px; width: 20px; 
+    height: 100px; 
+    background: white; 
+    -webkit-transform: rotate(30deg); 
+    transform:rotate(30deg); 
+    -webkit-transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 1000ms cubic-bezier(0.23, 1, 0.32, 1); 
+    opacity: 0;}
+.start_btn2:hover:after {
+    left: calc(100% + 50px); 
+    opacity: 1;}
+
+
+#melong{
+    width: 15vw;
+}
+
+#xxx{
+    position: absolute;
+    width: 4vw;
+    top: 4vh;
+    left: 8vw;
+}
+
+#xxx2{
+    position: absolute;
+    width: 4vw;
+    top: 4vh;
+    right: 8.5vw;
 }
