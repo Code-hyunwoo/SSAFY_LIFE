@@ -27,6 +27,7 @@ import HypeBoy from "./assets/audio/HypeBoy.flac"
 import Wordle from "./components/wordle/Wordle";
 import Breakout from "./components/breakout/Breakout";
 import MemoryGame from "./components/memory/MemoryGame";
+import Motion2 from "./routes/Motion2";
 
 
 
@@ -127,6 +128,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/webRTC" element={<Ssaraoke />}></Route>
           <Route path="/motion" element={<Motion />}></Route>
+          <Route path="/motion2" element={<Motion2 />}></Route>
           <Route path="/guest" element={<Guest />}></Route>
           <Route path="/game" element={<Game />}></Route>
           <Route path="/wordle" element={<Wordle />}></Route>

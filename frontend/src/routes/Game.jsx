@@ -30,7 +30,7 @@ function Game (){
             <img 
             id={styles.game_img}
             src={"https://cdn.imweb.me/upload/S2017041658f2383add757/fc8e6a6f8f8a6.gif"}
-            onClick={()=>{navigate("/breakout")}}
+            
             alt="Break" />
         </div>
         <div>

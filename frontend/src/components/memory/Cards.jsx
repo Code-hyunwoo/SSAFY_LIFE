@@ -39,7 +39,7 @@ function Cards(){
                 items[prev].stat = ""
                 setItems([...items])
                 setPrev(-1)
-            }, 1000)
+            }, 700)
         }
     }
     

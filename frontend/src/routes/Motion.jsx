@@ -2,9 +2,12 @@ import styles from './Motion.module.css'
 import { useSpring, animated, a, useTransition } from 'react-spring'
 import { useState, useEffect } from "react";
 import useMeasure from 'react-use-measure'
+import Rotatemotion from '../components/framer/Rotatemotion';
+import { useNavigate } from "react-router-dom"
 
 function Motion (){
 
+    const navigate = useNavigate();
     // Gage
     const [open, toggle] = useState(false);
     const [ref, { width }] = useMeasure()
@@ -59,6 +62,7 @@ function Motion (){
 
     return (
         <div className={styles.container}> 
+          
             <div className={styles.titlebox}>Motion UI</div>
             {/* Picture */}
             <div className="flex fill center">
@@ -110,9 +114,11 @@ function Motion (){
             }}
             />
             </div>
+            
+            <Rotatemotion />
 
-
-
+            <button id={styles.btn1} onClick={()=>{navigate("/motion2")}}> 
+            Next </button>
         </div>
 
     );
