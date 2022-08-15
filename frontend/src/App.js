@@ -32,8 +32,8 @@ import MemoryGame from "./components/memory/MemoryGame";
 
 function App() {
   const [bgmOn, setbgmOn] = useState(false);
-  const [audio, setAudio] = useState(new Audio(Time));
-  const [bgmName, setbgmName] = useState("The Weekend - Out of Time");
+  const [audio, setAudio] = useState(new Audio(HypeBoy));
+  const [bgmName, setbgmName] = useState("NewJeans - HypeBoy");
   const [nowBgm, setnowBgm] = useState(0);
 
   const bgmlist = ["All_Night", "Back", "BAMBOLEO", "DM","HypeBoy","Memory","Time","Walls","WE", "Heart", "Sparkling", "Attention", "Cookie"]

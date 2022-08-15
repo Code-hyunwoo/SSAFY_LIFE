@@ -68,7 +68,7 @@ function Board() {
             bricks.length = 0;
         }
 
-        if (player.level === 2){
+        if (player.level === 10){
             Swal.fire({
                 title: 'CLEAR',
                 text: '이걸 깨다니.... 대단하군' ,
