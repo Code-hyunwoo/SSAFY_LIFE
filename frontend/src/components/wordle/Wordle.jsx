@@ -143,10 +143,11 @@ if (jungdab===5){
       <Modal3 openmodal3={openmodal3} setOpenmodal3={setOpenmodal3}/>
       <div id="title">Wordle</div> 
       <button className="submit_btn" onClick={checkinganswer}> 제출하기 </button>
-      <div id={countbox}>
+      {/* <div id={countbox}>
       
-      </div>      
+      </div>       */}
       <div id="input_box">
+        <div id={countbox}/>
         <input className="wordle_input1" />
         <input className="wordle_input1" />
         <input className="wordle_input1" />
