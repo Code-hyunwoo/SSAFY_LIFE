@@ -12,7 +12,7 @@ function Guest (){
     const [render_number, setRender_number] = useState(0);
 
     useEffect(()=> {
-        axios.get("http://localhost:4000/api/guest")
+        axios.get("https://t7c08.p.ssafy.io/api/guest")
         .then((res)=>{
             setGuest_list(res.data.reverse());
         })
@@ -31,7 +31,7 @@ function Guest (){
 
     function postVistor(){
         if (guest_name !=="" & guest_text !==""){
-            axios.post("http://localhost:4000/api/guest",
+            axios.post("https://t7c08.p.ssafy.io/api/guest",
             {
                 "person_name": guest_name,
                 "person_text": guest_text
