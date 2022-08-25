@@ -15,6 +15,7 @@ function Guest (){
         axios.get("https://t7c08.p.ssafy.io/api/guest")
         .then((res)=>{
             setGuest_list(res.data.reverse());
+            console.log(res)
         })
     },[render_number])
 
@@ -30,11 +31,27 @@ function Guest (){
     }
 
     function postVistor(){
+
+        var today = new Date();
+
+        var year = today.getFullYear();
+        var month = ('0' + (today.getMonth() + 1)).slice(-2);
+        var day = ('0' + today.getDate()).slice(-2);
+        var dateString = year + '-' + month  + '-' + day;
+        var hours = ('0' + today.getHours()).slice(-2); 
+        var minutes = ('0' + today.getMinutes()).slice(-2);
+        var seconds = ('0' + today.getSeconds()).slice(-2); 
+        var timeString = hours + ':' + minutes  + ':' + seconds;
+
+
         if (guest_name !=="" & guest_text !==""){
             axios.post("https://t7c08.p.ssafy.io/api/guest",
             {
                 "person_name": guest_name,
-                "person_text": guest_text
+                "person_text": guest_text,
+                "guest_date": dateString,
+                "guest_hour": timeString
+
             },
             {
                 headers: {
@@ -44,9 +61,8 @@ function Guest (){
             
         })
         .then((res)=>{
-            console.log("방명록 작성 완료")
+            console.log(res)
             setRender_number(render_number + 1);
-            console.log(render_number)
             setGuest_name("");
             setGuest_text("");
         })
@@ -57,6 +73,9 @@ function Guest (){
         document.getElementById("inputtext").value ='';
     }
 
+
+    
+
     return (
         <>
             <div className={styles.title}>
@@ -66,7 +85,8 @@ function Guest (){
             <input className={styles.inputtext} id="inputtext" onChange={onTextChange} name="text" maxLength="36" placeholder="하고 싶은 말 남기기"></input>
             <button id={styles.write} onClick={()=>{
                 postVistor(); 
-                resetInput()}}> 작성하기 </button>
+                resetInput();
+              }}> 작성하기 </button>
 
             
             <div className={styles.container}>
@@ -76,6 +96,8 @@ function Guest (){
                     item xs={12} sm={4} lg={3} id={styles.rgyPostIt}>
                         <div id={styles.person_name}> {guest.person_name} </div>    
                         <div id={styles.person_text}> {guest.person_text} </div>    
+                        <div id={styles.guest_date}> {guest.guest_date} </div>
+                        <div id={styles.guest_hour}> {guest.guest_hour} </div>
                  
                     </Grid>
                 ))}

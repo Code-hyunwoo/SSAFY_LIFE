@@ -233,3 +233,16 @@
   }
 
  
+#guest_date{
+  position: absolute;
+  font-size: 1vw;
+  bottom: 10px;
+  right: 4.5vw;
+}
+
+#guest_hour{
+  position: absolute;
+  font-size: 1vw;
+  bottom: 10px;
+  right: 1vw;
+}
