@@ -13,6 +13,7 @@ function Wordle() {
        const [countbox, setCountbox] = useState('count_box1')
        const [openmodal2, setOpenmodal2] = useState(false)
        const [openmodal3, setOpenmodal3] = useState(false)
+       const [idcount, setIdcount] = useState(0)
        const [answer, setAnswer] = useState(answerlist[Math.floor(Math.random() * answerlist.length)])
        function checkinganswer(){
          
@@ -136,6 +137,14 @@ if (jungdab===5){
 } 
 }
 
+function onkeyPress(e){
+  if(e.key == 'Enter'){
+    checkinganswer();
+    document.getElementById(0).focus()
+  }
+}
+
+
   return (
     <div className="wordle_container" >
       <Modal1/>
@@ -148,46 +157,46 @@ if (jungdab===5){
       </div>       */}
       <div id="input_box">
         <div id={countbox}/>
-        <input className="wordle_input1" />
-        <input className="wordle_input1" />
-        <input className="wordle_input1" />
-        <input className="wordle_input1" />
-        <input className="wordle_input1" />
+        <input className="wordle_input1" maxLength="1" name="num1"/>
+        <input className="wordle_input1" maxLength="1" name="num2"/>
+        <input className="wordle_input1" maxLength="1" name="num3"/>
+        <input className="wordle_input1" maxLength="1" name="num4"/>
+        <input className="wordle_input1" maxLength="1" name="num5" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
+        <input className="wordle_input2" id={idcount}/>
         <input className="wordle_input2" />
         <input className="wordle_input2" />
         <input className="wordle_input2" />
-        <input className="wordle_input2" />
-        <input className="wordle_input2" />
+        <input className="wordle_input2" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
         <input className="wordle_input3" />
         <input className="wordle_input3" />
         <input className="wordle_input3" />
         <input className="wordle_input3" />
-        <input className="wordle_input3" />
+        <input className="wordle_input3" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
         <input className="wordle_input4" />
         <input className="wordle_input4" />
         <input className="wordle_input4" />
         <input className="wordle_input4" />
-        <input className="wordle_input4" />
+        <input className="wordle_input4" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
         <input className="wordle_input5" />
         <input className="wordle_input5" />
         <input className="wordle_input5" />
         <input className="wordle_input5" />
-        <input className="wordle_input5" />
+        <input className="wordle_input5" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
         <input className="wordle_input6" />
         <input className="wordle_input6" />
         <input className="wordle_input6" />
         <input className="wordle_input6" />
-        <input className="wordle_input6" />
+        <input className="wordle_input6" onKeyPress={onkeyPress}/>
       </div>
       
 
