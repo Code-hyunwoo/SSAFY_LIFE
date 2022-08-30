@@ -16,3 +16,4 @@ app.listen(port, () =>{
 })
 
 app.use('/api/guest', require('./routes/guestRouter'));
+app.use('/api/wordle', require('./routes/wordleRouter'));
