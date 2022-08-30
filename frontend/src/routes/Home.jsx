@@ -7,7 +7,7 @@ import mike from "../assets/images/mike.png"
 import game from "../assets/images/game.png"
 import visitor from "../assets/images/visitor.png"
 import motion from "../assets/images/motion.png"
-import Firework from "../components/Firework"
+import Firework from "../components/ssaraoke/Firework"
 
 function Home() {
 

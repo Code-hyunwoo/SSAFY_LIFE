@@ -1,8 +1,8 @@
 import styles from "./Ssaraoke.module.css"
-import Crazylights from "../components/Crazylights";
-import LightRope from "../components/LightRope";
-import MirrorBall from "../components/MirrorBall";
-import Screen  from "../components/Screen";
+import Crazylights from "../components/ssaraoke/Crazylights";
+import LightRope from "../components/ssaraoke/LightRope";
+import MirrorBall from "../components/ssaraoke/MirrorBall";
+import Screen  from "../components/ssaraoke/Screen";
 
 function Ssaraoke (){
 
