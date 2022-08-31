@@ -43,7 +43,6 @@ function Guest (){
         var seconds = ('0' + today.getSeconds()).slice(-2); 
         var timeString = hours + ':' + minutes  + ':' + seconds;
 
-        console.log(dateString)
 
 
         if (guest_name !=="" & guest_text !==""){
