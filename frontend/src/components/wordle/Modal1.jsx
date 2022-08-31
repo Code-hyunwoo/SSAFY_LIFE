@@ -43,7 +43,7 @@ export default function Modal1() {
             <br/>
             <br/>
             모든 타일을 초록색으로 만들고 제출하면 정답! <br/>
-            정답을 맞추면 나오는 <span style={{color: "red"}}>암호를 현우에게 말하면 푸짐한 선물이~ </span>
+            정답을 맞추고 <span style={{color: "red"}}>명예의 전당에 이름을 기록하자! </span>
           </div>
           <div>
             <button className="start_btn" onClick={handleClose}>START</button>

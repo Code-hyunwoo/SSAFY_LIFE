@@ -23,7 +23,7 @@ const style = {
 
 export default function Modal2({openmodal2}) {
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
+  // const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [royalName, setRoyalname] = useState("");
 
@@ -31,7 +31,6 @@ export default function Modal2({openmodal2}) {
 
 
   function postRoyalName(){
-    console.log(royalName)
     var today = new Date();
 
       var year = today.getFullYear();
@@ -71,7 +70,7 @@ export default function Modal2({openmodal2}) {
   }
 
   function onkeyEnter(e){
-    if (royalName!=="" & e.key =='Enter'){
+    if (royalName!=="" & e.key ==='Enter'){
           postRoyalName();
           handleClose();
           navigate('/game')

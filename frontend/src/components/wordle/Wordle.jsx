@@ -6,6 +6,8 @@ import Modal3 from "./Modal3";
 import axios from "axios";
 import royal3 from "../../assets/images/royal.png"
 import royal2 from "../../assets/images/royal2.png"
+import samusil from "../../assets/images/picture1.jpg"
+import newjeans from "../../assets/images/newjeans.jpeg"
 
 function Wordle() {
 
@@ -15,6 +17,7 @@ function Wordle() {
             const answers = res.data
             const pickanswer = answers[Math.floor(Math.random() * answers.length)]
             setAnswer(pickanswer.dab)
+            setHint(pickanswer.id)
         })
   },[])
 
@@ -27,12 +30,13 @@ function Wordle() {
 
         
        const [count, setCount] = useState(0)
-       const [check, setCheck] = useState(0)
+      //  const [check, setCheck] = useState(0)
        const [countbox, setCountbox] = useState('count_box1')
        const [openmodal2, setOpenmodal2] = useState(false)
        const [openmodal3, setOpenmodal3] = useState(false)
        const [idcount, setIdcount] = useState(0)
        const [answer, setAnswer] = useState('')
+       const [hint, setHint] = useState(0)
        const [royalList, setRoyalList] = useState([])
 
 
@@ -160,7 +164,7 @@ if (jungdab===5){
 }
 
 function onkeyPress(e){
-  if(e.key == 'Enter'){
+  if(e.key === 'Enter'){
     checkinganswer();
     if (idcount === 0){
     document.getElementById(`inputid`+idcount).focus();
@@ -211,14 +215,24 @@ function onkeyPress(e){
         )
         )}
       </div>
-
-      <div className="hint_box">
-        <div id="hint_title"> 힌트 </div>
-        <img id="hint_img" src="https://dimg.donga.com/wps/NEWS/IMAGE/2022/08/10/114905283.1.jpg"></img>
-        <div style={{ 
-          marginTop:"5vh"
-        }}> 뉴진스..? </div>
-      </div>
+      {hint ===1 &&
+        <div className="hint_box">
+          <div id="hint_title"> 힌트 </div>
+          <img id="hint_img" src={samusil}></img>
+          <div style={{ 
+            marginTop:"5vh"
+          }}> 다음 사진을 찍으며 내가 한 생각은? </div>
+        </div>
+        }
+      {hint ===2 &&
+        <div className="hint_box">
+          <div id="hint_title"> 힌트 </div>
+          <img id="hint_img" src={newjeans}></img>
+          <div style={{ 
+            marginTop:"5vh"
+          }}> 뉴진스 노래를 들으며 든 생각은? </div>
+        </div>
+        }
 
 
 
@@ -231,39 +245,39 @@ function onkeyPress(e){
         <input className="wordle_input1" maxLength="1" name="num5" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
-        <input className="wordle_input2" id="inputid0"/>
-        <input className="wordle_input2" />
-        <input className="wordle_input2" />
-        <input className="wordle_input2" />
-        <input className="wordle_input2" onKeyPress={onkeyPress}/>
+        <input className="wordle_input2" maxLength="1" id="inputid0"/>
+        <input className="wordle_input2" maxLength="1"/>
+        <input className="wordle_input2" maxLength="1"/>
+        <input className="wordle_input2" maxLength="1"/>
+        <input className="wordle_input2" maxLength="1" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
-        <input className="wordle_input3" id="inputid1"/>
-        <input className="wordle_input3" />
-        <input className="wordle_input3" />
-        <input className="wordle_input3" />
-        <input className="wordle_input3" onKeyPress={onkeyPress}/>
+        <input className="wordle_input3" maxLength="1" id="inputid1"/>
+        <input className="wordle_input3" maxLength="1"/>
+        <input className="wordle_input3" maxLength="1"/>
+        <input className="wordle_input3" maxLength="1"/>
+        <input className="wordle_input3" maxLength="1" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
-        <input className="wordle_input4" id="inputid2"/>
-        <input className="wordle_input4" />
-        <input className="wordle_input4" />
-        <input className="wordle_input4" />
-        <input className="wordle_input4" onKeyPress={onkeyPress}/>
+        <input className="wordle_input4" maxLength="1" id="inputid2"/>
+        <input className="wordle_input4" maxLength="1"/>
+        <input className="wordle_input4" maxLength="1"/>
+        <input className="wordle_input4" maxLength="1"/>
+        <input className="wordle_input4" maxLength="1" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
-        <input className="wordle_input5" id="inputid3"/>
-        <input className="wordle_input5" />
-        <input className="wordle_input5" />
-        <input className="wordle_input5" />
-        <input className="wordle_input5" onKeyPress={onkeyPress}/>
+        <input className="wordle_input5" maxLength="1" id="inputid3"/>
+        <input className="wordle_input5" maxLength="1"/>
+        <input className="wordle_input5" maxLength="1"/>
+        <input className="wordle_input5" maxLength="1"/>
+        <input className="wordle_input5" maxLength="1" onKeyPress={onkeyPress}/>
       </div>
       <div id="input_box">
-        <input className="wordle_input6" id="inputid4"/>
-        <input className="wordle_input6" />
-        <input className="wordle_input6" />
-        <input className="wordle_input6" />
-        <input className="wordle_input6" onKeyPress={onkeyPress}/>
+        <input className="wordle_input6" maxLength="1" id="inputid4"/>
+        <input className="wordle_input6" maxLength="1"/>
+        <input className="wordle_input6" maxLength="1"/>
+        <input className="wordle_input6" maxLength="1"/>
+        <input className="wordle_input6" maxLength="1" onKeyPress={onkeyPress}/>
       </div>
       
       
