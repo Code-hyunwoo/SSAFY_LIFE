@@ -28,7 +28,7 @@ import Wordle from "./components/wordle/Wordle";
 import Breakout from "./components/breakout/Breakout";
 import MemoryGame from "./components/memory/MemoryGame";
 import Motion2 from "./routes/Motion2";
-import Tetris from "./components/tetris/Tetris";
+import Tetrispage from "./components/tetris/Tetrispage";
 
 
 
@@ -135,7 +135,7 @@ function App() {
           <Route path="/wordle" element={<Wordle />}></Route>
           <Route path="/breakout" element={<Breakout />}></Route>
           <Route path="/memorygame" element={<MemoryGame />}></Route>
-          <Route path="/tetris" element={<Tetris />}></Route>
+          <Route path="/tetris" element={<Tetrispage />}></Route>
         </Routes>
       </BrowserRouter>
 
