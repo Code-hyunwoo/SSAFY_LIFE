@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./GameStats.css";
 
-const GameStats = ({ gameStats }) => {
+const GameStats = ({ gameStats, getstatlist }) => {
   const { level, points, linesCompleted, linesPerLevel } = gameStats;
   const linesToLevel = linesPerLevel - linesCompleted;
+
+  useEffect(()=>{
+    getstatlist(points);
+  },[points])
 
   return (
     <ul className="GameStats GameStats__right">

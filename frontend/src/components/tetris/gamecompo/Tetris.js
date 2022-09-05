@@ -11,7 +11,7 @@ import { usePlayer } from "../hooks/usePlayer";
 
 import BGM from "../../../assets/audio/Tetris.mp3"
 
-const Tetris = ({ rows, columns, setGameOver }) => {
+const Tetris = ({ rows, columns, setGameOver, getstatlist }) => {
   const [gameStats, addLinesCleared] = useGameStats();
   const [player, setPlayer, resetPlayer] = usePlayer();
   const [board, setBoard] = useBoard({
@@ -23,7 +23,6 @@ const Tetris = ({ rows, columns, setGameOver }) => {
   });
 
   useEffect(()=>{
-
     bgmVolume();
 
 },[]);
@@ -40,7 +39,7 @@ function bgmVolume(){
     <div className="Tetris">
       <audio id="bgm" src={BGM} autoPlay loop />
       <Board board={board} />
-      <GameStats gameStats={gameStats} />
+      <GameStats gameStats={gameStats} getstatlist={getstatlist}/>
       <Previews tetrominoes={player.tetrominoes} />
       <GameController
         board={board}

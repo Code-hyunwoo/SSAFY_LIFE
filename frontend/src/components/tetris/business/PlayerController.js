@@ -78,6 +78,7 @@ const attemptMovement = ({ board, action, player, setPlayer, setGameOver }) => {
   const isGameOver = collided && player.position.row === 0;
   if (isGameOver) {
     setGameOver(isGameOver);
+    console.log("게임끝")
   }
 
   setPlayer({
